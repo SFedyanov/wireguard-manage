@@ -34,12 +34,12 @@ SERVER_PORT='<< server port >>'
 DNS_IP=10.1.1.1
 NETWORK=10.1.1.0
 ```
-WORK_DIR: wireguard work directory.
-INTERFACE_NAME: wireguard configured ethernet interface.
-SERVER_PUPLIC_KEY_FILE: path to server public key file
-SERVER_ADDRESS: server IP or name.
-SERVER_PORT: server port
-DNS_IP: dns server IP
-NETWORK: Subnet for peers. As example server IP is 10.1.1.1 
+- WORK_DIR: wireguard work directory.
+- INTERFACE_NAME: wireguard configured ethernet interface.
+- SERVER_PUPLIC_KEY_FILE: path to server public key file
+- SERVER_ADDRESS: server IP or name.
+- SERVER_PORT: server port
+- DNS_IP: dns server IP
+- NETWORK: Subnet for peers. As example server IP is 10.1.1.1 
 Screept will check configurations and take first not used IP. 
 10.1.1.2, 10.1.1.3 ... etc.
