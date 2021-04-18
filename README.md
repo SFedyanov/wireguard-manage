@@ -1,5 +1,5 @@
-# wireguard-manage
-crating and removing bash scripts for wireguard service
+# Wireguard manage scripts
+bash scripts for adding and removing wireguard peers.
 
 ## How to use:
 copy dot.env to .env
