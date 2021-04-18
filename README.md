@@ -9,6 +9,7 @@ Bash scripts for adding and removing wireguard peers. And generatin conf file an
 5. Copy dot.env to .env
 6. Change the .env file with your data
 
+[How to install nad configure wireguard](https://wiki.fedyanov.com/mediawiki/index.php?title=Wireguard#Client)
 
 ## How to use:
 
