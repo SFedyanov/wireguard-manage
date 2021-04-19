@@ -6,7 +6,7 @@ DEBUG=true
 
 main (){
   printf "${grn}Generate WireGuad peer client${end}\n"
- 
+
   env
   check_parameter $@
   CLIENT_NAME=$1
@@ -33,7 +33,7 @@ create_peer(){
 
 create_user_folder(){
   printf "${blu}Creating directory: $CLIENTS_DIR/$CLIENT_NAME${end}\n"
-  mkdir $CLIENTS_DIR/$CLIENT_NAME
+  mkdir -p $CLIENTS_DIR/$CLIENT_NAME
 }
 
 add_user_to_wireguard(){
@@ -107,7 +107,7 @@ env(){
   CLIENT_IP=$(generate_ip_address)
   if [ "$DEBUG" = true ]
   then
-    printf "${blu}DEBUG: 
+    printf "${blu}DEBUG:
 	   WORK_DIR='$WORK_DIR'
 	   CLIENTS_DIR='$CLIENTS_DIR'
 	   CLIENT_IP='$CLIENT_IP'
