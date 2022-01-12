@@ -1,14 +1,15 @@
 # Wireguard manage scripts
 Bash scripts for adding and removing wireguard peers. And generatin conf file and QR code.
 
-## Requirenments 
+## Requirenments
 1. Clone this repo
 2. Install wirequard
-3. Install qrencode
+3. Install qrencode, nmap
 4. Configure wireguard
 5. Copy dot.env to .env
 6. Change the .env file with your data
 
+[How to install and configure wireguard](https://wiki.fedyanov.com/mediawiki/index.php?title=Wireguard#Client)
 
 ## How to use:
 
@@ -40,6 +41,6 @@ NETWORK=10.1.1.0
 - SERVER_ADDRESS: server IP or name.
 - SERVER_PORT: server port
 - DNS_IP: dns server IP
-- NETWORK: Subnet for peers. As example server IP is 10.1.1.1 
-Script will check configurations files and get first not used IP. 
+- NETWORK: Subnet for peers. As example server IP is 10.1.1.1
+Script will check configurations files and get first not used IP.
 10.1.1.2, 10.1.1.3 ... etc.
